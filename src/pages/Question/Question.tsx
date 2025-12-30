@@ -51,15 +51,15 @@ export const Question = ({ setAllSelectedAnswers }: QuestionProps) => {
 
   if (loading)
     return (
-      <Typography variant='title' tag='h1'>
-        Завантаження...
+      <Typography variant='text' tag='p'>
+        Loading
       </Typography>
     );
 
   if (!data)
     return (
       <Typography variant='title' tag='h1'>
-        Дані відсутні
+        No quiz for you, we are sorry!
       </Typography>
     );
 
