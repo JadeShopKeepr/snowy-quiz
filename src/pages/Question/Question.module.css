@@ -1,0 +1,30 @@
+.qPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  gap: 2rem;
+}
+.progressBarContainer {
+  width: 100%;
+}
+.answersContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}

@@ -1,0 +1,97 @@
+button {
+  border: 1px;
+  transition: all 200ms ease-out;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  padding: 30px 60px;
+  border-radius: 8px;
+  background-color: var(--color-accent-primary);
+  border-color: var(--color-border-default);
+  color: var(--color-text-primary);
+  opacity: 0px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--color-state-hover);
+    border-color: var(--color-border-default);
+    color: var(--color-text-primary);
+  }
+
+  &:active {
+    border-color: var(--color-state-active);
+    border: 2px solid;
+  }
+
+  &:disabled {
+    background-color: var(--color-border-muted);
+    border-color: var(--color-border-muted);
+    color: var(--color-text-inverse);
+    cursor: auto;
+  }
+}
+
+.previous {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  padding: 30px 60px;
+  border-radius: 8px;
+  background-color: var(--color-accent-primary);
+  border-color: var(--color-border-default);
+  color: var(--color-text-primary);
+  opacity: 0px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--color-state-hover);
+    border-color: var(--color-border-default);
+    color: var(--color-text-primary);
+  }
+
+  &:active {
+    border-color: var(--color-state-active);
+    border: 2px solid;
+  }
+
+  &:disabled {
+    background-color: var(--color-border-muted);
+    border-color: var(--color-border-muted);
+    color: var(--color-text-inverse);
+    cursor: auto;
+  }
+}
+.submit {
+  background-color: transparent;
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border-default);
+  padding: 20px 40px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--color-state-hover);
+    border-color: var(--color-border-default);
+    color: var(--color-text-primary);
+  }
+
+  &:active {
+    border-color: var(--color-bg-tertiary);
+    border: 2px solid;
+  }
+
+  &:disabled {
+    background-color: var(--color-border-muted);
+    border-color: var(--color-border-muted);
+    color: var(--color-text-inverse);
+    cursor: auto;
+  }
+}

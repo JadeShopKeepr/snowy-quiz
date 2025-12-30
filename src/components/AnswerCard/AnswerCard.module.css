@@ -1,0 +1,39 @@
+.default {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: clamp(15rem, 20vw, 25rem);
+  height: clamp(8rem, 10vw, 12rem);
+  padding: clamp(1rem, 2vw, 3rem);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  background-color: transparent;
+  background-color: transparent;
+  border-color: var(--color-border-muted);
+  color: var(--color-text-primary);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &hover {
+    background-color: var(--color-state-hover);
+    border-color: var(--color-border-default);
+    color: var(--color-text-primary);
+  }
+
+  &active {
+    border: 2px solid var(--color-bg-tertiary);
+    background-color: var(--color-bg-tertiary);
+  }
+}
+
+.highlighted {
+  border: 2px solid var(--color-bg-tertiary);
+}
+
+@container (min-width: 600px) {
+  .default {
+    width: clamp(18rem, 15vw, 28rem);
+    height: clamp(10rem, 12vw, 14rem);
+    padding: clamp(1.5rem, 2.5vw, 4rem);
+  }
+}

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root {
+  box-sizing: border-box;
+
+  font-family: 'Sansation', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  color: #ffffff;
+  background-color: #373e40;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --color-bg-primary: #373e40;
+  --color-bg-secondary: #305252;
+  --color-bg-tertiary: #488286;
+  --color-bg-light: #beeaec;
+
+  --color-surface-default: #77878b;
+  --color-surface-muted: #b7d5d4;
+
+  --color-text-primary: #ffffff;
+  --color-text-inverse: #373e40;
+
+  --color-accent-primary: #488286;
+  --color-accent-secondary: #305252;
+
+  --color-border-default: #77878b;
+  --color-border-muted: #b7d5d4;
+
+  --color-state-hover: #5a9ea0;
+  --color-state-active: #305252;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
