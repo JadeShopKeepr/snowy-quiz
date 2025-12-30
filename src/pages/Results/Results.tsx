@@ -1,5 +1,6 @@
 import type { AnswerBase } from '../../types/types';
-import { Typography } from '../../components';
+import { Button, Typography } from '../../components';
+import { useNavigate } from 'react-router';
 
 import styles from './Results.module.css';
 
@@ -10,7 +11,7 @@ interface ResultsProps {
 export const Results = ({ selectedAnswers }: ResultsProps) => {
   const correctCount = selectedAnswers.filter((ans) => ans.fields.isCorrect).length;
   const wrongCount = selectedAnswers.length - correctCount;
-
+  const navigate = useNavigate();
   return (
     <div className={styles.rPage}>
       <div className={styles.container}>
@@ -32,6 +33,11 @@ export const Results = ({ selectedAnswers }: ResultsProps) => {
             </li>
           ))}
         </ul>
+        <div>
+          <Button variant='submit' onClick={() => navigate('/')}>
+            Try Again
+          </Button>
+        </div>
       </div>
     </div>
   );
